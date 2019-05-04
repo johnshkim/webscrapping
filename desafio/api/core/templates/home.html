@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio WebScrapping</title>
+</head>
+<body>
+    <h1>Lista do site: </h1>
+    <ul>
+        {% for cadastro in cadastros %}
+        <li> Nome: {{cadastro.nome }}</li>
+        <li> Link: {{cadastro.link }}</li>
+        <li> Preco: {{cadastro.preco }}</li>
+        <br>
+        {% endfor %}
+    </ul>
+</body>
+</html>
